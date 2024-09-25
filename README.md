@@ -1,56 +1,51 @@
 # Car Management System
-
+### Name: Sadman Sakib
 ### Matriculation Number: 7213446
+## Project Overview
+The Car Management System is a Java application designed to handle a collection of car records, demonstrating the application of object-oriented programming principles along with file operations in Java. Developed in Eclipse, this system allows for the management and manipulation of car data based on specified filtering criteria.
+
+## Features
+- **Car Data Management:** Manages details of cars including ID, make, model, year, color, price, and registration number.
+- **Data Filtering:** Filters cars by brand, model age, and specific price criteria.
+- **File Output:** Saves the filtered data to text files for persistent storage.
+
+## Technical Description
+### Car Class
+The `Car` class is the backbone of the application, encapsulating car properties and responsible for file operations based on various filters.
+
+#### Attributes
+- `id`: Unique identifier for each car.
+- `make`: Manufacturer of the car.
+- `model`: Model of the car.
+- `yearOfManufacture`: Year the car was manufactured.
+- `color`: Color of the car.
+- `price`: Price of the car.
+- `registrationNumber`: Official registration number.
+
+#### Key Methods
+- `saveCarsByBrand(List<Car> cars, String brand, String filePath)`: Filters and saves cars by brand.
+- `saveCarsByModelAndAge(List<Car> cars, String model, int n, String filePath)`: Filters cars by model and age.
+- `saveCarsByYearAndPrice(List<Car> cars, int year, double minPrice, String filePath)`: Filters and saves cars by year and minimum price.
+
+### Main Class
+Serves as the entry point for the application, initializing car objects and invoking filter methods.
+
+### File Handling
+Utilizes `BufferedWriter` and `FileWriter` to efficiently and correctly handle text file outputs, ensuring robust error management.
+
 
 ## Installation
 
-Follow these detailed steps to set up the Car Management System on your local machine:
-
-### Prerequisites
-
-Before you begin, ensure you have the following installed:
-- **Java Development Kit (JDK)**: Java SE 17 or higher is recommended. You can download it from [Oracle's official website](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
-- **Eclipse IDE**: This project was developed using Eclipse IDE for Java Developers. Download and install it from [Eclipse's official download page](https://www.eclipse.org/downloads/packages/).
-
 ### Setting Up the Project
 
-1. **Install Git**:
-   - Windows: Download and install from [git-scm.com](https://git-scm.com/download/win).
-   - Verify installation by opening a command prompt or terminal and typing:
-     ```
-     git --version
-     ```
+1. **Clone/Download the Project**
 
-2. **Clone the Repository**:
-   - Open a terminal or command prompt.
-   - Navigate to the directory where you want the project:
-     ```
-     cd path/to/your/folder
-     ```
-   - Clone the repository using:
-     ```
-     git clone https://github.com/yourusername/car-management-system.git
-     ```
-   - This command downloads the project to your computer.
 
-3. **Open the Project in Eclipse**:
+2. **Open the Project in Eclipse**:
    - Start Eclipse.
    - Select `File` > `Open Projects from File System...` from the menu.
    - Navigate to the directory where you cloned the project.
    - Select the project and click `Finish` to import it into Eclipse.
-
-4. **Set Up JDK in Eclipse**:
-   - In Eclipse, go to `Window` > `Preferences` > `Java` > `Installed JREs`.
-   - Click `Add`, and then select `Standard VM`.
-   - Navigate to the JDK installation path (e.g., `C:\Program Files\Java\jdk-17`).
-   - Ensure that the newly added JDK is checked, and click `Apply and Close`.
-
-### Configuring the Environment
-
-Ensure your environment is correctly set up to run Java applications:
-- **Environment Variables**:
-  - Set `JAVA_HOME` to your JDK installation path.
-  - Update the `Path` variable to include `%JAVA_HOME%\bin;` to allow system-wide use of Java.
 
 ## Running the Application
 
