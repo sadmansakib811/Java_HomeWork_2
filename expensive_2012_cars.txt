@@ -1,1 +1,0 @@
-Car{id=2, make='Honda', model='Civic', yearOfManufacture=2012, color='Blue', price=7000.0, registrationNumber='ABC456'}

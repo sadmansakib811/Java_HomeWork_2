@@ -1,88 +1,70 @@
-import java.util.List;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
+
+import java.util.UUID;
 
 public class Car {
-    // Car attributes
-    private int id;
-    private String make;
-    private String model;
-    private int yearOfManufacture;
-    private String color;
-    private double price;
-    private String registrationNumber;
+	private String id;
+	private String Make;
+	private String Model;
+	private int manufactureYear;
+	private String Color;
+	private double Price;
+	private String registrationNumber;
+	
+	public Car(String make, String model, int manufactureYr, String color, double price, String regNumber) {
+		this.id = UUID.randomUUID().toString();
+		this.setMake(make);
+		this.Model = model;
+		this.manufactureYear = manufactureYr;
+		this.Color = color;
+		this.Price = price;
+		this.setRegistrationNumber(regNumber);
+	}
+	
+	public String getModel() {
+		return Model;
+	}
 
-    // Constructor
-    public Car(int id, String make, String model, int yearOfManufacture, String color, double price, String registrationNumber) {
-        this.id = id;
-        this.make = make;
-        this.model = model;
-        this.yearOfManufacture = yearOfManufacture;
-        this.color = color;
-        this.price = price;
-        this.registrationNumber = registrationNumber;
-    }
+	public void setModel(String model) {
+		Model = model;
+	}
 
-    // Getters
-    public String getMake() {
-        return make;
-    }
+	public int getManufactureYear() {
+		return manufactureYear;
+	}
 
-    public String getModel() {
-        return model;
-    }
+	public void setManufactureYear(int manufactureYear) {
+		this.manufactureYear = manufactureYear;
+	}
 
-    public int getYearOfManufacture() {
-        return yearOfManufacture;
-    }
+	public String getColor() {
+		return Color;
+	}
 
-    public double getPrice() {
-        return price;
-    }
+	public void setColor(String color) {
+		Color = color;
+	}
 
-    // Save lists of cars to different files based on filters
-    public static void saveCarsByBrand(List<Car> cars, String brand, String filePath) throws IOException {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
-            for (Car car : cars) {
-                if (car.getMake().equalsIgnoreCase(brand)) {
-                    writer.write(car.toString() + "\n");
-                }
-            }
-        }
-    }
+	public double getPrice() {
+		return Price;
+	}
 
-    public static void saveCarsByModelAndAge(List<Car> cars, String model, int n, String filePath) throws IOException {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
-            for (Car car : cars) {
-                if (car.getModel().equalsIgnoreCase(model) && (2024 - car.getYearOfManufacture() > n)) {
-                    writer.write(car.toString() + "\n");
-                }
-            }
-        }
-    }
+	public void setPrice(double price) {
+		Price = price;
+	}
 
-    public static void saveCarsByYearAndPrice(List<Car> cars, int year, double minPrice, String filePath) throws IOException {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
-            for (Car car : cars) {
-                if (car.getYearOfManufacture() == year && car.getPrice() > minPrice) {
-                    writer.write(car.toString() + "\n");
-                }
-            }
-        }
-    }
+	public String getRegistrationNumber() {
+		return registrationNumber;
+	}
 
-    // Custom toString method for Car
-    @Override
-    public String toString() {
-        return "Car{" +
-                "id=" + id +
-                ", make='" + make + '\'' +
-                ", model='" + model + '\'' +
-                ", yearOfManufacture=" + yearOfManufacture +
-                ", color='" + color + '\'' +
-                ", price=" + price +
-                ", registrationNumber='" + registrationNumber + '\'' +
-                '}';
-    }
+	public void setRegistrationNumber(String registrationNumber) {
+		this.registrationNumber = registrationNumber;
+	}
+
+	public String getMake() {
+		return Make;
+	}
+
+	public void setMake(String make) {
+		Make = make;
+	}
 }
