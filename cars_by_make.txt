@@ -1,2 +1,2 @@
-ID: 8711f940-1770-4fff-bc5e-17aaaf4fb866, Make: Toyota, Model: Corolla, Year: 2010, Color: White, Price: 15000.00, RegNumber: AB123CD
-ID: 1da593b8-61b6-4fa5-bdaf-c8b7c7a242b6, Make: Toyota, Model: Camry, Year: 2000, Color: Blue, Price: 18000.00, RegNumber: TY789GH
+ID: 5589dfbb-7797-4082-bc50-d9505c886f1c, Make: Toyota, Model: Corolla, Year: 2010, Color: White, Price: 15000.00, RegNumber: AB123CD
+ID: 7b32e1e1-df7f-48cf-bae3-16e058010348, Make: Toyota, Model: Camry, Year: 2000, Color: Blue, Price: 18000.00, RegNumber: TY789GH
