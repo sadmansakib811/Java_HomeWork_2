@@ -12,17 +12,17 @@ public class Hometask2 {
 
         // Creating an array of Car objects
         List<Car> carList = new ArrayList<>();
-        carList.add(new Car("Toyota", "Corolla", 2010, "White", 15000, "AB123CD"));
-        carList.add(new Car("Honda", "Civic", 2005, "Black", 12000, "EF456GH"));
-        carList.add(new Car("Ford", "Mustang", 2018, "Red", 30000, "IJ789KL"));
-        carList.add(new Car("Toyota", "Camry", 2000, "Blue", 18000, "TY789GH"));
-        carList.add(new Car("Honda", "Accord", 2015, "Gray", 25000, "LK321CD"));
+        carList.add(new Car("Bugatti", "Veron", 2010, "White", 12000, "AB123CD"));
+        carList.add(new Car("Marcedej", "Benz", 2005, "Black", 15000, "EF456GH"));
+        carList.add(new Car("Ford", "Mustang", 2018, "Red", 35000, "IJ789KL"));
+        carList.add(new Car("Rolls", "Royce", 2005, "Blue", 19000, "TY789GH"));
+        carList.add(new Car("Aston", "Martin", 2010, "Gray", 28000, "LK321CD"));
 
         // Part a) Save a list of cars of a given brand
-        saveCarsByMake(carList, "Toyota", "cars_by_make.txt");
+        saveCarsByMake(carList, "Bugatti", "cars_by_make.txt");
 
         // Part b) Save a list of cars of a given model that have been in use for more than n years
-        saveCarsByModelAndYears(carList, "Civic", 10, "cars_by_model_and_years.txt");
+        saveCarsByModelAndYears(carList, "Royce", 10, "cars_by_model_and_years.txt");
 
         // Part c) Save a list of cars of a given year of manufacture, the price of which is higher than the specified one
         saveCarsByYearAndPrice(carList, 2010, 14000, "cars_by_year_and_price.txt");

@@ -1,2 +1,1 @@
-ID: 5589dfbb-7797-4082-bc50-d9505c886f1c, Make: Toyota, Model: Corolla, Year: 2010, Color: White, Price: 15000.00, RegNumber: AB123CD
-ID: 7b32e1e1-df7f-48cf-bae3-16e058010348, Make: Toyota, Model: Camry, Year: 2000, Color: Blue, Price: 18000.00, RegNumber: TY789GH
+ID: 52eb1c12-f43a-4f27-ae9a-df6a8c3640d2, Make: Bugatti, Model: Veron, Year: 2010, Color: White, Price: 12000.00, RegNumber: AB123CD
