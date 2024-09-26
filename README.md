@@ -1,12 +1,20 @@
 # Homework 2:Car Management System
 ### Name: Sadman Sakib
 ### Matriculation Number: 7213446
-# Tasks
-### Create class Car: id, Make, Model, Year of manufacture, Color, Price, Registration number. Create an array of objects. Save to the different files:
+## 📄 Project Description
+This project is a solution to Hometask2, which involves creating a `Car` class with specific attributes and implementing functionality to filter and save car data into different text files based on given criteria. The program performs the following tasks:
 
-- TaskA: a list of cars of a given brand;
-- TaskB: a list of cars of a given model that have been in use for more than n years;
-- TaskC: a list of cars of a given year of manufacture, the price of which is higher than the specified one.
+1. Creates an array of `Car` objects.
+2. Saves the following data to separate text files:
+   - A list of cars of a given brand.
+   - A list of cars of a given model that have been in use for more than `n` years.
+   - A list of cars of a given year of manufacture, the price of which is higher than the specified one.
+
+## 📂 File Structure
+- **Hometask2.java**: Main Java file containing the implementation.
+- **cars_by_make.txt**: Text file containing the list of cars filtered by make.
+- **cars_by_model_and_years.txt**: Text file containing the list of cars filtered by model and usage years.
+- **cars_by_year_and_price.txt**: Text file containing the list of cars filtered by year and price.
 
 
 ## Installation
@@ -25,11 +33,11 @@
 ## Running the Application
 
 To run the Car Management System within Eclipse:
-1. **Navigate to the `Main.java` File**:
+1. **Navigate to the `Hometask2.java` File**:
    - In Eclipse, expand the project tree in the `Project Explorer`.
-   - Find `src` > `(default package)` > `Main.java`.
+   - Find `src` > `(default package)` > `Hometask2.java`.
 2. **Run the Application**:
-   - Right-click on `Main.java`.
+   - Right-click on `Hometask2.java`.
    - Select `Run As` > `Java Application`.
    - The application will execute and create output files in the project root directory, based on the predefined filters.
 

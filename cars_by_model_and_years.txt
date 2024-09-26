@@ -1,0 +1,1 @@
+ID: 5e253403-7d24-4d4e-8973-56c17e49078a, Make: Honda, Model: Civic, Year: 2005, Color: Black, Price: 12000.00, RegNumber: EF456GH

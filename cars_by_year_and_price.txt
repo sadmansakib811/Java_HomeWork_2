@@ -1,0 +1,1 @@
+ID: 8711f940-1770-4fff-bc5e-17aaaf4fb866, Make: Toyota, Model: Corolla, Year: 2010, Color: White, Price: 15000.00, RegNumber: AB123CD
